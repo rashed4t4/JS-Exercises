@@ -102,7 +102,7 @@ var cart = [
    function totalCost(){
        var result = 0;
        cart.forEach(function(obj){
-          result = result + obj.price;
+          result = result + obj.price*obj.quantity;
          
        });
        return result;
